@@ -29,16 +29,305 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="./styles.css" />
+
+  <!-- TODO: Add contactPoint, sameAs, product offers/prices and availability only after verifying real business data. -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Nowe Jednorazówki PL",
-        "url": "https://www.dbucha.com/",
-        "inLanguage": "pl-PL",
-        "about": ["jednorazówki", "e papierosy jednorazowe", "e papieros", "hurt"]
-      }
-    </script>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.dbucha.com/#organization",
+          "name": "Nowe Jednorazówki PL",
+          "url": "https://www.dbucha.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.dbucha.com/assets/img/logo.png"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Poland"
+          },
+          "availableLanguage": "pl-PL"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.dbucha.com/#website",
+          "name": "Nowe Jednorazówki PL",
+          "url": "https://www.dbucha.com/",
+          "publisher": {
+            "@id": "https://www.dbucha.com/#organization"
+          },
+          "inLanguage": "pl-PL"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.dbucha.com/#webpage",
+          "url": "https://www.dbucha.com/",
+          "name": "Jednorazówki i e papierosy jednorazowe",
+          "description": "Jednorazówki i e papierosy jednorazowe: popularne modele, nowości i oferta hurt.",
+          "isPartOf": {
+            "@id": "https://www.dbucha.com/#website"
+          },
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "jednorazówki"
+            },
+            {
+              "@type": "Thing",
+              "name": "e papierosy jednorazowe"
+            },
+            {
+              "@type": "Thing",
+              "name": "e papieros"
+            }
+          ],
+          "breadcrumb": {
+            "@id": "https://www.dbucha.com/#breadcrumbs"
+          },
+          "mainEntity": [
+            {
+              "@id": "https://www.dbucha.com/#itemlist"
+            },
+            {
+              "@id": "https://www.dbucha.com/#faq"
+            }
+          ],
+          "inLanguage": "pl-PL"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://www.dbucha.com/#breadcrumbs",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Strona główna",
+              "item": "https://www.dbucha.com/"
+            }
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://www.dbucha.com/#collection",
+          "url": "https://www.dbucha.com/",
+          "name": "Jednorazówki - Nowe Jednorazówki PL",
+          "description": "Lista produktów typu e papieros jednorazowy dostępnych na stronie Nowe Jednorazówki PL.",
+          "isPartOf": {
+            "@id": "https://www.dbucha.com/#website"
+          },
+          "mainEntity": {
+            "@id": "https://www.dbucha.com/#itemlist"
+          },
+          "inLanguage": "pl-PL"
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://www.dbucha.com/#itemlist",
+          "name": "Popularne jednorazówki i e papierosy jednorazowe",
+          "itemListOrder": "https://schema.org/ItemListOrderAscending",
+          "numberOfItems": 9,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-mecha-x-28k#product",
+                "name": "Jednorazówka MERRYMI Mecha X 28K",
+                "alternateName": "MERRYMI Mecha X 28K",
+                "url": "https://www.dbucha.com/products/jednorazowki-merrymi-mecha-x-28k",
+                "image": "https://www.dbucha.com/assets/img/jednorazowki-merrymi-mecha-x-28k.png",
+                "description": "Świeża nowość o mocnym smaku i stabilnej pracy urządzenia.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-twins-40k#product",
+                "name": "Jednorazówka MERRYMI Panda Twins 40K",
+                "alternateName": "MERRYMI Panda Twins 40K",
+                "url": "https://www.dbucha.com/products/jednorazowki-merrymi-panda-twins-40k",
+                "image": "https://www.dbucha.com/assets/img/jednorazowki-merrymi-panda-twins-40k.png",
+                "description": "Podwójny profil smakowy i wysoka wydajność w codziennym użyciu.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "MERRYMI"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/jednorazowki-adalya-adl-pro-360-20k#product",
+                "name": "E papieros jednorazowy ADALYA ADL PRO 360 20K",
+                "alternateName": "ADALYA ADL PRO 360 20K",
+                "url": "https://www.dbucha.com/products/jednorazowki-adalya-adl-pro-360-20k",
+                "image": "https://www.dbucha.com/assets/img/jednorazowki-adalya-adl-pro-360-20k.jpg",
+                "description": "Nowy e papieros jednorazowy dla fanów intensywnych aromatów.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "ADALYA"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/vozol-gear-power-20k-buchow#product",
+                "name": "Jednorazówka Vozol Gear Power 20K",
+                "alternateName": "Vozol Gear Power 20K",
+                "url": "https://www.dbucha.com/products/vozol-gear-power-20k-buchow",
+                "image": "https://www.dbucha.com/assets/img/vozol-gear-power-20k-buchow.jpg",
+                "description": "Kompaktowa jednorazówka, która świetnie sprawdza się na co dzień.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Vozol"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/jednorazowki-jnr-mega-box-pro-50k#product",
+                "name": "Jednorazówka JNR Mega Box Pro 50K",
+                "alternateName": "JNR Mega Box Pro 50K",
+                "url": "https://www.dbucha.com/products/jednorazowki-jnr-mega-box-pro-50k",
+                "image": "https://www.dbucha.com/assets/img/jednorazowki-jnr-mega-box-pro-50k.png",
+                "description": "Mocna propozycja dla użytkowników szukających dużej wydajności.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/jednorazowki-jnr-quads-4w1-120k#product",
+                "name": "Jednorazówka JNR Quads 120K",
+                "alternateName": "JNR Quads 120K",
+                "url": "https://www.dbucha.com/products/jednorazowki-jnr-quads-4w1-120k",
+                "image": "https://www.dbucha.com/assets/img/jednorazowki-jnr-quads-4w1-120k.png",
+                "description": "Wysoka wydajność i cztery profile smakowe.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/jednorazowki-jnr-triple-110k#product",
+                "name": "Jednorazówka JNR Triple 110K",
+                "alternateName": "JNR Triple 110K",
+                "url": "https://www.dbucha.com/products/jednorazowki-jnr-triple-110k",
+                "image": "https://www.dbucha.com/assets/img/jednorazowki-jnr-triple-110k.png",
+                "description": "Topowa jednorazówka do długiego użytkowania.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "JNR"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/vozol-rave-40k-buchow#product",
+                "name": "E papieros jednorazowy Vozol Rave 40K",
+                "alternateName": "Vozol Rave 40K",
+                "url": "https://www.dbucha.com/products/vozol-rave-40k-buchow",
+                "image": "https://www.dbucha.com/assets/img/vozol-rave-40k-buchow.png",
+                "description": "Stylowy e papieros dla fanów owocowych aromatów.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "Vozol"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "item": {
+                "@type": "Product",
+                "@id": "https://www.dbucha.com/products/jednorazowki-al-fakher-crown-bar-e-hose-x-60k#product",
+                "name": "Jednorazówka AL FAKHER Crown Bar 60K",
+                "alternateName": "AL FAKHER Crown Bar 60K",
+                "url": "https://www.dbucha.com/products/jednorazowki-al-fakher-crown-bar-e-hose-x-60k",
+                "image": "https://www.dbucha.com/assets/img/jednorazowki-al-fakher-crown-bar-e-hose-x-60k.png",
+                "description": "Mocna propozycja z segmentu najlepsze jednorazówki.",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "AL FAKHER"
+                },
+                "category": "e papierosy jednorazowe"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.dbucha.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czym różni się jednorazówka od klasycznego e papierosa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Jednorazówka jest gotowa do użycia od razu i nie wymaga ładowania liquidu ani wymiany grzałki."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy oferta obejmuje e papierosy jednorazowe w wariancie hurt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak, sprzedaż hurtowa jest dostępna w dedykowanej sekcji hurt sklepu."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jak wybrać najlepsze jednorazówki?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Porównaj pojemność, intensywność smaku, profil nikotynowy oraz producenta urządzenia."
+              }
+            }
+          ],
+          "inLanguage": "pl-PL"
+        }
+      ]
+    }
+  </script>
+
 </head>
 
 <body>
