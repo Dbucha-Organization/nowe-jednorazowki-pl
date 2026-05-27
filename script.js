@@ -160,6 +160,6 @@ if (reviewCards.length) {
     const image = productImageMap[productName];
     if (!image) return;
     meta.classList.add('review-product-inline');
-    meta.innerHTML = `<img src="${image}" alt="${productName}" /><span>${productName}</span>`;
+    meta.innerHTML = `<img src="${image}" alt="${productName}" decoding="async" loading="lazy" /><span>${productName}</span>`;
   });
 }
